@@ -1,4 +1,4 @@
-## Welcome to Stephen's personal web server
+## Welcome to Stephen's Personal Server
 
 <!--
 You can use the [editor on GitHub](https://github.com/SmartJQ/smartjq.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
