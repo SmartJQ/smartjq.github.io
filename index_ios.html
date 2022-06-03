@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+<title>&#8290;</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="assets/css/all.css">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script src="assets/js/slider.js"></script>
+
+<script>
+    window.onerror = function(ev)
+    {
+        window.location.replace("/");
+    };
+</script>
+
+<body class="crazycolors">
+    <header class="block">
+        <div class="time"><span id="hours"></span><span class="colon"></span><span id="minutes"></span></div>
+        <div class="date"><s>Bdaddy</s><b> BIRTHDAY </b></div>
+    </header>
+    <div id="slider">
+        <div id="well">
+            <div id="thumbtack">
+                <img class="arrow" src="assets/images/arrow.svg" alt="arrow">
+            </div>
+            <div id="hint">
+                <span>slide for food</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var dt = new Date();
+    // document.getElementById("hours").innerHTML = dt.toLocaleTimeString(navigator.language, {hour: '2-digit', hour12: false});
+    document.getElementById("hours").innerHTML = String(dt.getHours()).padStart(2, '0');
+    document.getElementById("minutes").innerHTML = String(dt.getMinutes()).padStart(2, '0');
+</script>
+
+</html>

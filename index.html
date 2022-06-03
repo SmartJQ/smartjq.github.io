@@ -1,42 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest.appcache">
-<title>&#8290;</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" type="text/css" href="css/all.css">
+<html lang="en-US">
+<meta charset="UTF-8">
+<title>Stephen's Server</title>
+<link href="assets/css/css.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="/assets/icons/page.png">
+<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+<meta name="description" content="Stephen's personal web server.">
+<meta name="keywords" content="Stephen, Server, Personal, Blog">
+<meta name="robot" content="index,follow">
+<meta name="author" content="Stephen">
+<meta name="language" content="English">
+<meta name="revisit-after" content="30 days">
+<meta name="theme-color" content="#500">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<script src="js/slider.js"></script>
-
-<script>
-    window.onerror = function(ev)
-    {
-        window.location.replace("http://next");
-    };
-</script>
-
-<body class="crazycolors">
-    <header class="block">
-        <div class="time"><span id="hours"></span><span class="colon"></span><span id="minutes"></span></div>
-        <div class="date"><s>Bdaddy</s><b> BIRTHDAY </b></div>
-    </header>
-    <div id="slider">
-        <div id="well">
-            <div id="thumbtack">
-                <img class="arrow" src="img/arrow.svg" alt="arrow">
-            </div>
-            <div id="hint">
-                <span>slide for food</span>
-            </div>
-        </div>
+<meta name="apple-mobile-web-app-title" content="Stephen's Server">
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/114.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/180.png">
+<meta name="format-detection" content="telephone=no">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stephen">
+<meta name="twitter:description" content="Stephen's personal web server.">
+<meta name="twitter:image" content="page.png">
+<meta property="og:title" content="Stephen's Server">
+<meta property="og:site_name" content="Stephen's Server">
+<meta property="og:url" content="https://smartjq.ml/">
+<meta property="og:description" content="Stephen's personal web server.">
+<meta property="og:type" content="website">
+<body>
+    <div id="content">
+        <img src="assets/icons/logo.png" id="logo" alt="Logo">
+        <h1><span class="f1">S</span><span class="f2">T</span><span class="f3">E</span><span class="f4">P</span><span class="f5">H</span><span class="f6">E</span><span class="f6">N</span></h1>
+        <p class="tag">
+            Welcome to Stephen's personal web server.<br>
+        </p>
+        <!--
+        <a class="btn" href="Disclaimer.docx" rel="nofollow">Disclaimer</a><br>
+        <br>
+        <h2>OpenWrt</h2>
+        -->
     </div>
 </body>
-
-<script>
-    var dt = new Date();
-    // document.getElementById("hours").innerHTML = dt.toLocaleTimeString(navigator.language, {hour: '2-digit', hour12: false});
-    document.getElementById("hours").innerHTML = String(dt.getHours()).padStart(2, '0');
-    document.getElementById("minutes").innerHTML = String(dt.getMinutes()).padStart(2, '0');
-</script>
-
 </html>

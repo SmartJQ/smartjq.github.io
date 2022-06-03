@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Error: Page not found.</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<link rel="icon" href="assets/icons/page.png" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+</head>
+<body>
+
+	<div id="container" class="container">
+		<h1>You've just discovered a page that doesn't exist. <br>
+	    <br>
+		Don't panic, and watch your oxygen levels!</h1>
+		<a href="/" class="btn">BACK TO SAFETY</a>
+		<ul id="scene" class="scene">
+			<li class="layer" data-depth="0.2"><img src="assets/images/Me.png"></li>
+			<li class="layer" data-depth="0.8"><img src="assets/images/Moon.png"></li>
+		</ul>
+	</div>
+
+	<div class="dd-bar">
+		<ul>
+			<li><a href="/">Hosted on Stephen's server</a></li>
+		</ul>
+	</div>
+
+	<script src="assets/js/parallax.js"></script>
+	<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	</script>
+
+</body>
+</html>
