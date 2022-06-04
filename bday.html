@@ -9,18 +9,179 @@
 <script src="assets/js/slider.js"></script>
 
 <script>
+    function alerts(n,m) {
+        alert('🤨 SUS, looks like we will have to go over this question');
+        if (n == 1) {
+            alert("...just so you know, it's going to get increasingly annoying as you make more mistakes");
+        }
+        for (let i = 0; i < n; i++) {
+            alert(m)
+        }
+        alert("Okay, back to the questions");
+    }
+    function questions(q) {
+        if (q == 0) {
+            if (confirm("Age Restriction:\nThese questions are only meant to be completed for people aged 20+. Please confirm your age.") == true) {
+                alert("Thank you for verifying your age. You may now continue.");
+                return q + 1;
+            } else {
+                alert("You sure you know what you are doing? Go reflect on your behaviour and come back later 🤨");
+                return 12;
+            }
+        }
+        if (q == 1) {
+            if (confirm("Question 1:\nAlkylating agents work in cancer treatment by attaching an alkyl group to the guanine base of the DNA molecule, preventing the cell from multiplying itself.\nIS THIS GENERALLY CORRECT?") == true) {
+                alert("Ayyy you're right, on to the next one");
+                return q + 1;
+            } else {
+                n++
+                if (n >= 3) {
+                    alert("You've made too many mistakes. Reflect on what you'd done and come back later 🤨");
+                    return 12;
+                }
+                alerts(n, "Alkylating agents prevent the cell from making copies of itself by damaging its DNA.");
+                return q;
+            }
+        }
+        if (q == 2) {
+            if (confirm("Question 2:\nHas there been anyone that you know (including yourself) who's created a fanfic on Skulduggery at one point?") == true) {
+                alert("Very well written. Next question.");
+                return q + 1;
+            } else {
+                n++
+                if (n >= 3) {
+                    alert("You've made too many mistakes. Reflect on what you'd done and come back later 🤨");
+                    return 12;
+                }
+                alerts(n, "Reflect on what you've picked. Now think again. And again.\nAND AGAIN.");
+                return q;
+            }
+        }
+        if (q == 3) {
+            if (confirm("Question 3:\nWhat's your opinion on the brutalist (wink wink) architecture at Barbican? Do you believe it's attractive or not?") == false) {
+                alert("Valid thoughts. Next question.");
+                return q + 1;
+            } else {
+                n++
+                if (n >= 3) {
+                    alert("You've made too many mistakes. Reflect on what you'd done and come back later 🤨");
+                    return 12;
+                }
+                alerts(n, "Maybe you watched the music video wayyy too many times... just saying");
+                return q;
+            }
+        }
+        if (q == 4) {
+            if (confirm("Question 4:\nBack to medicine. Patients who received large doses or multiple courses of cisplatin may eventually suffer from irreversible kidney damage. Correct or not?") == true) {
+                alert("Revision's paid off I guess. Good on you. Next question.");
+                return q + 1;
+            } else {
+                n++
+                if (n >= 3) {
+                    alert("You've made too many mistakes. Reflect on what you'd done and come back later 🤨");
+                    return 12;
+                }
+                alerts(n, "Go through the notes, look me in the eye and tell me you revised.");
+                return q;
+            }
+        }
+        if (q == 5) {
+            if (confirm("Question 5:\nGlad you passed the intial age check, but have you ever been inside a casion before?") == true) {
+                alert("Thought so. Thanks again for confirming your age. Next one.");
+                return q + 1;
+            } else {
+                n++
+                if (n >= 3) {
+                    alert("You've made too many mistakes. Reflect on what you'd done and come back later 🤨");
+                    return 12;
+                }
+                alerts(n, "Shouldn't be doing this test if you've not been in a casino before. Go visit one and come back later.");
+                return q;
+            }
+        }
+        if (q == 6) {
+            if (confirm("Question 6:\n'If we can get through a blizzard, we can get through anything.'\nDo you believe in this statement?") == true) {
+                alert("Truer words have never been spoken. Almost there! Next question.");
+                return q + 1;
+            } else {
+                n++
+                if (n >= 3) {
+                    alert("You've made too many mistakes. Reflect on what you'd done and come back later 🤨");
+                    return 12;
+                }
+                alerts(n, "Say to yourself, I CAN DO THIS. Now say again. And again.");
+                return q;
+            }
+        }
+        if (q == 7) {
+            if (confirm("Question 7:\n'Vegas is a great city because it's never too sunny.'\nEvaluate this comment.") == false) {
+                alert("I agree, now onto the penultimate question. We going deep now.");
+                return q + 1;
+            } else {
+                n++
+                if (n >= 3) {
+                    alert("You've made too many mistakes. Reflect on what you'd done and come back later 🤨");
+                    return 12;
+                }
+                alerts(n, "Guess you've never got sunburned before. Oh wait.");
+                return q;
+            }
+        }
+        if (q == 8) {
+            if (confirm("Question 8:\nHave you a clear view on what gives you confidence and would you actively act on it?") == true) {
+                alert("*Nods in agreement* LAST QUESTION HERE WE GO!");
+                return q + 1;
+            } else {
+                n++
+                if (n >= 3) {
+                    alert("You've made too many mistakes. Reflect on what you'd done and come back later 🤨");
+                    return 12;
+                }
+                alerts(n, "Go get your confidence sorted. Then come back and answer these questions.");
+                return q;
+            }
+        }
+        if (q == 9) {
+            if (confirm("Question 9:\nHave you at any point in your life been in possession of crabs?") == true) {
+                alert("Great minds think alike. Congrats on finishing the test!");
+                return q + 1;
+            } else {
+                n++
+                if (n >= 3) {
+                    alert("You've made too many mistakes. Reflect on what you'd done and come back later 🤨");
+                    return 12;
+                }
+                alerts(n, "Don't believe you 🤨");
+                return q;
+            }
+        }
+    }
     window.onerror = function(ev)
     {
+        n = 0;
         alert('T-5...');
         alert('T-4...');
         alert('T-3...');
         alert('T-2...');
         alert('T-1...');
-        alert('Happy birthday!');
-        alert('🎉\n🎉\n🎉');
-        alert('⣰⣾⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣆\n⣿⣿⣿⡿⠋⠄⡀⣿⣿⣿⣿⣿⠿⠛⠋⣉⠙⠻⣿⣿\n⣿⣿⣿⣇⠔⠈⣿⣿⡿⠛⢉⣤⣶⣾⣿⣿⣿⣦⡀⠹\n⣿⠃⠄⢠⣾⣿⠟⢁⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄\n⣿⣿⣿⣿⠟⢁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷\n⣿⣿⡟⠁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n⣿⠋⢠⣾⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⣿⣿⣿⣿⣿⣿\n⠁⣰⣿⣿⣿⣿⣿⣿⣿⠗⠄⠄⠄⠄⣿⣿⣿⣿⣿⡟\n⣼⣿⣿⣿⣿⣿⡿⠋⠄⠄⠄⣠⣄⢰⣿⣿⣿⣿⣿⠃\n⣿⣿⣿⣿⣿⣿⡇⠄⢀⡴⠚⢿⣿⣿⣿⣿⣿⣿⡏⢠\n⣿⣿⣿⣿⡿⣿⣿⠴⠋⠄⠄⢸⣿⣿⣿⣿⣿⡟⢀⣾\n⣿⣿⣿⣿⠃⠈⠁⠄⠄⢀⣴⣿⣿⣿⣿⣿⡟⢀⣾⣿\n⣿⣿⣿⣿⠄⠄⠄⠄⢶⣿⣿⣿⣿⣿⣿⠏⢀⣾⣿⣿\n⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⠋⣠⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢁⣼⣿⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢁⣴⣿⣿⣿⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⡿⠟⢁⣴⣿⣿⣿⣿⠗⠄⠄⣿⣿\n⢿⣿⣿⣿⠿⠛⣉⣤⣾⣿⣿⣿⣿⣿⣇⠠⠺⣷⣿⣿\n⣄⣈⣡⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⠉⠁⣀⣼⣿⣿⣿\n⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣾⣿⣿⡿⠟\n');
-
-        //window.location.replace("/");
+        alert('🎉 🎉 🎉 🎉 🎉\nHappy birthday!\n🎉 🎉 🎉 🎉 🎉');
+        alert("So it appears you've found the secret sauce...");
+        alert("If you just follow these pop-ups, I'm sure you will find what you're after 🔮");
+        alert("Promise this is not gonna be one of those infinite pop-up loops...\no̶r̶ ̶i̶s̶ ̶i̶t̶?̶");
+        alert("Mmmm I guess there's only one way to find out *smirks*");
+        alert("As long as you get these answers right, right?");
+        alert("RIGHT? 🤨");
+        alert("𝗜𝗡𝗜𝗧𝗜𝗔𝗧𝗜𝗡𝗚 𝗜𝗗𝗘𝗡𝗧𝗜𝗧𝗬 𝗖𝗛𝗘𝗖𝗞\nUse 'OK' for YES and 'Cancel' for NO.");
+        q = 0;
+        while (q <= 10) {
+            q = questions(q);
+        }
+        if (q == 12){
+            alert("Here's a UNO Reverse for you.")
+            alert('⣰⣾⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣆\n⣿⣿⣿⡿⠋⠄⡀⣿⣿⣿⣿⣿⠿⠛⠋⣉⠙⠻⣿⣿\n⣿⣿⣿⣇⠔⠈⣿⣿⡿⠛⢉⣤⣶⣾⣿⣿⣿⣦⡀⠹\n⣿⠃⠄⢠⣾⣿⠟⢁⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄\n⣿⣿⣿⣿⠟⢁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷\n⣿⣿⡟⠁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n⣿⠋⢠⣾⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⣿⣿⣿⣿⣿⣿\n⠁⣰⣿⣿⣿⣿⣿⣿⣿⠗⠄⠄⠄⠄⣿⣿⣿⣿⣿⡟\n⣼⣿⣿⣿⣿⣿⡿⠋⠄⠄⠄⣠⣄⢰⣿⣿⣿⣿⣿⠃\n⣿⣿⣿⣿⣿⣿⡇⠄⢀⡴⠚⢿⣿⣿⣿⣿⣿⣿⡏⢠\n⣿⣿⣿⣿⡿⣿⣿⠴⠋⠄⠄⢸⣿⣿⣿⣿⣿⡟⢀⣾\n⣿⣿⣿⣿⠃⠈⠁⠄⠄⢀⣴⣿⣿⣿⣿⣿⡟⢀⣾⣿\n⣿⣿⣿⣿⠄⠄⠄⠄⢶⣿⣿⣿⣿⣿⣿⠏⢀⣾⣿⣿\n⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⠋⣠⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢁⣼⣿⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢁⣴⣿⣿⣿⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⡿⠟⢁⣴⣿⣿⣿⣿⠗⠄⠄⣿⣿\n⢿⣿⣿⣿⠿⠛⣉⣤⣾⣿⣿⣿⣿⣿⣇⠠⠺⣷⣿⣿\n⣄⣈⣡⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⠉⠁⣀⣼⣿⣿⣿\n⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣾⣿⣿⡿⠟\n');
+            window.location.replace("login.html");
+            //window.close()
+        }
     };
 </script>
 
