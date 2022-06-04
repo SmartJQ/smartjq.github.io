@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Instructions</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/pstyle.css">
+    </head>
+    <body>
+        <header>
+            <a href="login.html" class="logo">BACK</a>
+            <!--
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            -->
+        </header>
+        <section>
+            <img src="assets/images/stars_front.png" id="stars">
+            <img src="assets/images/moon_front.png" id="moon">
+            <img src="assets/images/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">HAPPY BIRTHDAY</h2>
+            <a href="#sec" id="btn">7 June</a>
+            <img src="assets/images/mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Read Carefully Before You Unwrap 🔮</h2>
+            <p>
+            <br><br>
+                It is a plasma globe. Here, I said it.
+            <br>
+                And I totally didn't buy it because it kinda looks like the psychic emoji.
+            <br><br>
+                Essentially, it is a glass container filled with inert gases that light up under high voltages, but don't worry it's a high frequency AC voltage that is generally safe to touch (when you are not wearing anything conductive that is). (̶T̶r̶u̶s̶s̶ ̶m̶e̶ ̶I̶ ̶a̶m̶ ̶a̶n̶ ̶E̶n̶G̶e̶N̶i̶R̶)̶
+            <br><br>
+                In simple terms, yes it is a lamp. However although being harmless to humans, it might cause interference with electronics within a 20cm radius - so make sure phones/laptops are not in that range when it's plugged in. If unsure, consult me before turning it on - said interference primarily exhibits as slightly worsened Bluetooth/Wi-Fi signals but there could well be other problems as the distance shortens.
+            <br><br>
+                More importantly, NEVER wrap a large piece of electrically conductive item around the circular glass shell within a 5cm radius - a typical example would be aluminium foil wraps. This is because the high voltage high frequency electricity can shock through the glass and create so much heating that it becomes unsafe to operate - glass can shatter and it might leave a burn mark on the item itself too. Items with a small surface area on the other hand should be fine to be brought closer, but bear in mind that it could still be problematic if they are touching for prolonged periods of time (might need to gauge the time depending on how hot it gets but a good rule of thumb is when it feels really warm to touch).
+            <br><br>
+                In the box you will also find a USB cable for the globe which could be plugged into any phone charger but I would highly advise against plugging it into a computer. The other end of the charger connecting to the globe operates at 12V 0.8A and could theoretically be used with any AC adaptor as long as the port fits. In addition to the cable, there are also two fluorescent tubes in the box, which work together with the globe and which, when brought closer but not necessarily touching, will light up (works best in a dim environment, as with the globe). If you are feeling uncertain about this, wait till I demonstrate it in person.
+            <br><br>
+                <a href="https://en.wikipedia.org/wiki/Plasma_globe" style="color:aqua">Here</a> is a more detailed and generally correct description of the globe.
+            <br><br>
+                Love,
+            <br>
+                Stephen
+            </p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function() {
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>

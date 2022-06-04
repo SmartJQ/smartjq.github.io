@@ -12,7 +12,7 @@
     function alerts(n,m) {
         alert('🤨 SUS, looks like we will have to go over this question');
         if (n == 1) {
-            alert("...just so you know, it's going to get increasingly annoying as you make more mistakes");
+            alert("😶...just so you know, the number of pop-ups will increase making it progressively more annoying as you make more mistakes");
         }
         for (let i = 0; i < n; i++) {
             alert(m)
@@ -21,7 +21,7 @@
     }
     function questions(q) {
         if (q == 0) {
-            if (confirm("Age Restriction:\nThese questions are only meant to be completed for people aged 20+. Please confirm your age.") == true) {
+            if (confirm("Age Restriction:\nThese questions are only meant to be completed by people aged 20+. Please confirm your age.") == true) {
                 alert("Thank you for verifying your age. You may now continue.");
                 return q + 1;
             } else {
@@ -30,7 +30,7 @@
             }
         }
         if (q == 1) {
-            if (confirm("Question 1:\nAlkylating agents work in cancer treatment by attaching an alkyl group to the guanine base of the DNA molecule, preventing the cell from multiplying itself.\nIS THIS GENERALLY CORRECT?") == true) {
+            if (confirm("Question 1:\nAlkylating agents work in cancer treatment by attaching an alkyl group to the guanine base of the DNA molecule, preventing the cell from multiplying itself.\nIs this generally correct?") == true) {
                 alert("Ayyy you're right, on to the next one");
                 return q + 1;
             } else {
@@ -100,7 +100,7 @@
             }
         }
         if (q == 6) {
-            if (confirm("Question 6:\n'If we can get through a blizzard, we can get through anything.'\nDo you believe in this statement?") == true) {
+            if (confirm("Question 6:\n'If we can get through a blizzard, we can get through anything.'\nDo you believe in this statement?👀") == true) {
                 alert("Truer words have never been spoken. Almost there! Next question.");
                 return q + 1;
             } else {
@@ -129,7 +129,7 @@
         }
         if (q == 8) {
             if (confirm("Question 8:\nHave you a clear view on what gives you confidence and would you actively act on it?") == true) {
-                alert("*Nods in agreement* LAST QUESTION HERE WE GO!");
+                alert("*Nods in agreement*\nLAST QUESTION HERE WE GO!");
                 return q + 1;
             } else {
                 n++
@@ -143,7 +143,7 @@
         }
         if (q == 9) {
             if (confirm("Question 9:\nHave you at any point in your life been in possession of crabs?") == true) {
-                alert("Great minds think alike. Congrats on finishing the test!");
+                alert("Great minds think alike.\nCongrats on finishing the test!!");
                 return q + 1;
             } else {
                 n++
@@ -159,8 +159,6 @@
     window.onerror = function(ev)
     {
         n = 0;
-        alert('T-5...');
-        alert('T-4...');
         alert('T-3...');
         alert('T-2...');
         alert('T-1...');
@@ -181,6 +179,9 @@
             alert('⣰⣾⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣆\n⣿⣿⣿⡿⠋⠄⡀⣿⣿⣿⣿⣿⠿⠛⠋⣉⠙⠻⣿⣿\n⣿⣿⣿⣇⠔⠈⣿⣿⡿⠛⢉⣤⣶⣾⣿⣿⣿⣦⡀⠹\n⣿⠃⠄⢠⣾⣿⠟⢁⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄\n⣿⣿⣿⣿⠟⢁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷\n⣿⣿⡟⠁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n⣿⠋⢠⣾⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⣿⣿⣿⣿⣿⣿\n⠁⣰⣿⣿⣿⣿⣿⣿⣿⠗⠄⠄⠄⠄⣿⣿⣿⣿⣿⡟\n⣼⣿⣿⣿⣿⣿⡿⠋⠄⠄⠄⣠⣄⢰⣿⣿⣿⣿⣿⠃\n⣿⣿⣿⣿⣿⣿⡇⠄⢀⡴⠚⢿⣿⣿⣿⣿⣿⣿⡏⢠\n⣿⣿⣿⣿⡿⣿⣿⠴⠋⠄⠄⢸⣿⣿⣿⣿⣿⡟⢀⣾\n⣿⣿⣿⣿⠃⠈⠁⠄⠄⢀⣴⣿⣿⣿⣿⣿⡟⢀⣾⣿\n⣿⣿⣿⣿⠄⠄⠄⠄⢶⣿⣿⣿⣿⣿⣿⠏⢀⣾⣿⣿\n⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⠋⣠⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢁⣼⣿⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢁⣴⣿⣿⣿⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⡿⠟⢁⣴⣿⣿⣿⣿⠗⠄⠄⣿⣿\n⢿⣿⣿⣿⠿⠛⣉⣤⣾⣿⣿⣿⣿⣿⣇⠠⠺⣷⣿⣿\n⣄⣈⣡⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⠉⠁⣀⣼⣿⣿⣿\n⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣾⣿⣿⡿⠟\n');
             window.location.replace("login.html");
             //window.close()
+        } else {
+            alert("Teleporting you to the instructions.")
+            window.location.replace("instructions.html");
         }
     };
 </script>
